@@ -1,0 +1,36 @@
+
+
+{% extends "PrestaShopTestBundle::layout.html.twig" %}
+
+{% block title %}
+  Regular Test - {{ parent() }}
+{% endblock %}
+
+{% block prestaShopTest_body %}
+
+<h3>Execution d'un test Régulier</h3>
+<hr>
+
+<script type="text/javascript">
+function fun()
+
+{ 
+  window.stop(); 
+  window.location.replace("kill");
+}
+
+</script>
+
+
+        
+<button class="btn btn-danger btn-block" onclick="fun()">Arrêter le Test</button>
+<div class="embed-responsive embed-responsive-16by9">
+ 
+<iframe class="embed-responsive-item" src="{{path('prestaShop_test_cmd')}}?url={{ app.request.query.get('url')}}& module={{ app.request.query.get('module')}}& install={{ app.request.query.get('install')}}& testAddons={{ app.request.query.get('testAddons')}}& language={{ app.request.query.get('language')}}& country={{ app.request.query.get('country')}}& dbServer={{ app.request.query.get('dbServer')}}& dbUser={{ app.request.query.get('dbUser')}}& dbPwd={{ app.request.query.get('dbPwd')}}& dbEmPwd={{ app.request.query.get('dbEmPwd')}}"></iframe>
+
+</div>
+
+
+
+
+    {% endblock %}

@@ -1,0 +1,3 @@
+services:
+    prestaShop_test.execcommand:
+        class: PrestaShop\TestBundle\ExecCommand\CommandExec

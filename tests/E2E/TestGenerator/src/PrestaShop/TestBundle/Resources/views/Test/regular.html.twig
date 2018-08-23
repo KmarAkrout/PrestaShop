@@ -1,0 +1,1241 @@
+ {% extends "PrestaShopTestBundle::layout.html.twig" %} {% block title %} Regular Test - {{ parent() }} {% endblock %} {% block prestaShopTest_body
+%}
+
+
+<script type="text/javascript">
+  ///////***** creation des champs optionnels ****/////
+  //// URL//////
+  function handleChangeUrl(checkbox) {
+    divUrl = document.getElementById('divUrl');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idUrl') == null) {
+        newlabel1 = document.createElement("Label");
+        newlabel1.setAttribute("for", "url");
+        newlabel1.innerHTML = "Url (OPTIONAL):";
+        divUrl.appendChild(newlabel1);
+
+
+        tempInput1 = document.createElement('input');
+        tempInput1.setAttribute("type", "text");
+        tempInput1.setAttribute("id", "idUrl");
+        tempInput1.setAttribute("name", "url");
+        tempInput1.setAttribute("placeholder", "default to 'localhost'");
+        tempInput1.setAttribute("class", "form-control");
+        divUrl.appendChild(tempInput1);
+        divUrl.hidden = false;
+      }
+    } else {
+      divUrl.removeChild(tempInput1);
+      divUrl.removeChild(newlabel1);
+      divUrl.hidden = true;
+
+    }
+  }
+  /////// Module ////////////
+
+  function handleChangeMod(checkbox) {
+    divMod = document.getElementById('divMod');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idMod') == null) {
+        newlabel2 = document.createElement("Label");
+        newlabel2.setAttribute("for", "module");
+        newlabel2.innerHTML = "Module (OPTIONAL):";
+        divMod.appendChild(newlabel2);
+
+
+        tempInput2 = document.createElement('input');
+        tempInput2.setAttribute("type", "text");
+        tempInput2.setAttribute("id", "idMod");
+        tempInput2.setAttribute("name", "module");
+        tempInput2.setAttribute("placeholder", "default to 'gadwords'");
+        tempInput2.setAttribute("class", "form-control");
+        divMod.appendChild(tempInput2);
+        divMod.hidden = false;
+      }
+    } else {
+      divMod.removeChild(tempInput2);
+      divMod.removeChild(newlabel2);
+      divMod.hidden = true;
+
+    }
+  }
+
+  function handleChangeIns(checkbox) {
+    divIns = document.getElementById('divIns');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idIns') == null) {
+        newlabel3 = document.createElement("Label");
+        newlabel3.setAttribute("for", "Inswd");
+        newlabel3.innerHTML = "Install (OPTIONAL):";
+        divIns.appendChild(newlabel3);
+        tempInput3 = document.createElement('select');
+        tempInput3.setAttribute("id", "idIns");
+        tempInput3.setAttribute("name", "install");
+        tempInput3.setAttribute("class", "form-control");
+        option1 = document.createElement("option");
+        option1.setAttribute("value", "true");
+        option1.innerHTML = "True";
+        option2 = document.createElement("option");
+        option2.setAttribute("value", "false");
+        option2.innerHTML = "False";
+        tempInput3.appendChild(option1);
+        tempInput3.appendChild(option2);
+        sm = document.createElement("small");
+        sm.setAttribute("class", "form-text text-muted");
+        sm.innerHTML = "Choisissez (True) si vous souhaitez exécuter le script d'installation ( false par défaut )";
+        divIns.appendChild(tempInput3);
+        divIns.appendChild(sm);
+        divIns.hidden = false;
+      }
+    } else {
+      divIns.removeChild(tempInput3);
+      divIns.removeChild(newlabel3);
+      divIns.removeChild(sm);
+      divIns.hidden = true;
+
+    }
+
+  }
+
+  function handleChangeTes(checkbox) {
+    divTes = document.getElementById('divTes');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idTes') == null) {
+        newlabel4 = document.createElement("Label");
+        newlabel4.setAttribute("for", "testAddons");
+        newlabel4.innerHTML = "Test_AddOns (OPTIONAL):";
+        divTes.appendChild(newlabel4);
+        tempInput4 = document.createElement('select');
+        tempInput4.setAttribute("id", "idTes");
+        tempInput4.setAttribute("name", "testAddons");
+        tempInput4.setAttribute("class", "form-control");
+        option3 = document.createElement("option");
+        option3.setAttribute("value", "true");
+        option3.innerHTML = "True";
+        option4 = document.createElement("option");
+        option4.setAttribute("value", "false");
+        option4.innerHTML = "False";
+        tempInput4.appendChild(option3);
+        tempInput4.appendChild(option4);
+        sm1 = document.createElement("small");
+        sm1.setAttribute("class", "form-text text-muted");
+        sm1.innerHTML =
+          "Choisissez (True) si vous souhaitez désactiver la vérification avec l’API Addons ( false par défaut )";
+        divTes.appendChild(tempInput4);
+        divTes.appendChild(sm1);
+        divTes.hidden = false;
+      }
+    } else {
+      divTes.removeChild(tempInput4);
+      divTes.removeChild(newlabel4);
+      divTes.removeChild(sm1);
+      divTes.hidden = true;
+
+    }
+
+  }
+
+  function handleChangeLan(checkbox) {
+    divLan = document.getElementById('divLan');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idLan') == null) {
+        newlabel5 = document.createElement("Label");
+        newlabel5.setAttribute("for", "language");
+        newlabel5.innerHTML = "Language (OPTIONAL):";
+        divLan.appendChild(newlabel5);
+
+
+        tempInput5 = document.createElement('input');
+        tempInput5.setAttribute("type", "text");
+        tempInput5.setAttribute("id", "idLan");
+        tempInput5.setAttribute("name", "language");
+        tempInput5.setAttribute("placeholder", "default to 'en'");
+        tempInput5.setAttribute("class", "form-control");
+        divLan.appendChild(tempInput5);
+        divLan.hidden = false;
+      }
+    } else {
+      divLan.removeChild(tempInput5);
+      divLan.removeChild(newlabel5);
+      divLan.hidden = true;
+
+    }
+  }
+  //// Country//////
+  function handleChangeCou(checkbox) {
+    divCou = document.getElementById('divCou');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idCou') == null) {
+        newlabel6 = document.createElement("Label");
+        newlabel6.setAttribute("for", "country");
+        newlabel6.innerHTML = "Country (OPTIONAL):";
+        divCou.appendChild(newlabel6);
+
+
+        tempInput6 = document.createElement('input');
+        tempInput6.setAttribute("type", "text");
+        tempInput6.setAttribute("id", "idCou");
+        tempInput6.setAttribute("name", "country");
+        tempInput6.setAttribute("placeholder", "default to 'france'");
+        tempInput6.setAttribute("class", "form-control");
+        divCou.appendChild(tempInput6);
+        divCou.hidden = false;
+      }
+    } else {
+      divCou.removeChild(tempInput6);
+      divCou.removeChild(newlabel6);
+      divCou.hidden = true;
+
+    }
+  }
+  //// DB_SERVER//////
+  function handleChangeDbS(checkbox) {
+    divDbS = document.getElementById('divDbS');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idDbS') == null) {
+        newlabel7 = document.createElement("Label");
+        newlabel7.setAttribute("for", "dbServer");
+        newlabel7.innerHTML = "Db_Server (OPTIONAL):";
+        divDbS.appendChild(newlabel7);
+
+
+        tempInput7 = document.createElement('input');
+        tempInput7.setAttribute("type", "text");
+        tempInput7.setAttribute("id", "idDbS");
+        tempInput7.setAttribute("name", "dbServer");
+        tempInput7.setAttribute("placeholder", "default to 'mysql'");
+        tempInput7.setAttribute("class", "form-control");
+        divDbS.appendChild(tempInput7);
+        divDbS.hidden = false;
+      }
+    } else {
+      divDbS.removeChild(tempInput7);
+      divDbS.removeChild(newlabel7);
+      divDbS.hidden = true;
+
+    }
+  }
+  //// DB_User//////
+  function handleChangeDbU(checkbox) {
+    divDbU = document.getElementById('divDbU');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idDbU') == null) {
+        newlabel8 = document.createElement("Label");
+        newlabel8.setAttribute("for", "dbUser");
+        newlabel8.innerHTML = "Db_User (OPTIONAL):";
+        divDbU.appendChild(newlabel8);
+
+
+        tempInput8 = document.createElement('input');
+        tempInput8.setAttribute("type", "text");
+        tempInput8.setAttribute("id", "idDbU");
+        tempInput8.setAttribute("name", "dbUser");
+        tempInput8.setAttribute("placeholder", "default to 'root'");
+        tempInput8.setAttribute("class", "form-control");
+        divDbU.appendChild(tempInput8);
+        divDbU.hidden = false;
+      }
+    } else {
+      divDbU.removeChild(tempInput8);
+      divDbU.removeChild(newlabel8);
+      divDbU.hidden = true;
+
+    }
+  }
+  //// DB_PWD//////
+  function handleChangeDbPwd(checkbox) {
+    divDbP = document.getElementById('divDbP');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idDbP') == null) {
+        newlabel9 = document.createElement("Label");
+        newlabel9.setAttribute("for", "dbPwd");
+        newlabel9.innerHTML = "Db_Password (OPTIONAL):";
+        divDbP.appendChild(newlabel9);
+
+
+        tempInput9 = document.createElement('input');
+        tempInput9.setAttribute("type", "text");
+        tempInput9.setAttribute("id", "idDbP");
+        tempInput9.setAttribute("name", "dbPwd");
+        tempInput9.setAttribute("placeholder", "default to 'doge'");
+        tempInput9.setAttribute("class", "form-control");
+        divDbP.appendChild(tempInput9);
+        divDbP.hidden = false;
+      }
+    } else {
+      divDbP.removeChild(tempInput9);
+      divDbP.removeChild(newlabel9);
+      divDbP.hidden = true;
+
+    }
+  }
+  //// DB_E_PWD//////
+  function handleChangeEPwd(checkbox) {
+    divDbEP = document.getElementById('divDbEP');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idDbEP') == null) {
+        newlabel10 = document.createElement("Label");
+        newlabel10.setAttribute("for", "dbEPwd");
+        newlabel10.innerHTML = "Db_Empty_Password (OPTIONAL):";
+        divDbEP.appendChild(newlabel10);
+        tempInput10 = document.createElement('select');
+        tempInput10.setAttribute("id", "idDbEP");
+        tempInput10.setAttribute("name", "dbEPwd");
+        tempInput10.setAttribute("class", "form-control");
+        option5 = document.createElement("option");
+        option5.setAttribute("value", "true");
+        option5.innerHTML = "True";
+        option6 = document.createElement("option");
+        option6.setAttribute("value", "false");
+        option6.innerHTML = "False";
+        tempInput10.appendChild(option5);
+        tempInput10.appendChild(option6);
+        sm2 = document.createElement("small");
+        sm2.setAttribute("class", "form-text text-muted");
+        sm2.innerHTML = "Si vous n'avez pas un mot de pas2se, choisir 'True'.";
+        divDbEP.appendChild(tempInput10);
+        divDbEP.appendChild(sm2);
+        divDbEP.hidden = false;
+      }
+    } else {
+      divDbEP.removeChild(tempInput10);
+      divDbEP.removeChild(newlabel10);
+      divDbEP.removeChild(sm2);
+      divDbEP.hidden = true;
+
+    }
+  }
+  //////***** Selection de Path ***//////////
+  function changeFunc() {
+
+
+
+    var DivToAdd = document.getElementById('IdDiv');
+    var DivToAdd1 = document.getElementById('DivToAdd1');
+    var divBtn1 = document.getElementById('divBtn1');
+    var selectBox = document.getElementById("path");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    var DivPath1 = document.getElementById('DivPath1');
+    var alert = document.getElementById('alertId');
+
+    var selectBox2 = document.getElementById("Myselect");
+    var module1 = document.getElementById('module1');
+
+    divMod1 = document.getElementById('divMod1');
+    var selectedValue1;
+    var path;
+
+    path = selectedValue;
+
+    var selectedId = selectBox.options[selectBox.selectedIndex].id;
+
+    var list;
+    if (document.getElementById('li' + selectedId) != null) {
+      list = document.getElementById('li' + selectedId).getAttribute('data-value');
+    } else {
+      list = "";
+
+    }
+    var res = list.split("***");
+    var res1 = res[0].split("\n");
+    var j;
+    var z;
+    var Sub;
+    var res2;
+    for (j = 1; j < res.length; j++) {
+      var n = res[j].lastIndexOf('.');
+
+
+      Sub = res[j].substring(0, n + 3);
+      res2 = Sub.split("\n");
+      var concat;
+      for (z = 1; z < res2.length; z++) {
+
+        concat = res2[0] + res2[z];
+        var n1 = concat.indexOf("/");
+        var sub1 = concat.substring(0, n1 + 1);
+        var rep = concat.replace(sub1, '');
+        var rep1 = rep.replace(":", "/");
+        res1.push(rep1);
+      }
+    }
+    if (selectedValue == "02_install_module.js") {
+      alert.hidden = false;
+      module1.checked = true;
+      module1.disabled = true;
+      if (document.getElementById('idMod1') == null) {
+        newlabel12 = document.createElement("Label");
+        newlabel12.setAttribute("for", "module1");
+        newlabel12.setAttribute("id", "labMod");
+        newlabel12.innerHTML = "Module (OPTIONAL):";
+        divMod1.appendChild(newlabel12);
+
+
+        tempInput12 = document.createElement('input');
+        tempInput12.setAttribute("type", "text");
+        tempInput12.setAttribute("id", "idMod1");
+        tempInput12.setAttribute("required", "true");
+        tempInput12.setAttribute("name", "module1");
+        tempInput12.setAttribute("placeholder", "default to 'gadwords'");
+        tempInput12.setAttribute("class", "form-control");
+        divMod1.appendChild(tempInput12);
+        divMod1.hidden = false;
+      } else {
+        divMod1.removeChild(tempInput12);
+        divMod1.removeChild(newlabel12);
+        newlabel12 = document.createElement("Label");
+        newlabel12.setAttribute("for", "module1");
+        newlabel12.setAttribute("id", "labMod");
+        newlabel12.innerHTML = "Module (OPTIONAL):";
+        divMod1.appendChild(newlabel12);
+
+
+        tempInput12 = document.createElement('input');
+        tempInput12.setAttribute("type", "text");
+        tempInput12.setAttribute("id", "idMod1");
+        tempInput12.setAttribute("required", "true");
+        tempInput12.setAttribute("name", "module1");
+        tempInput12.setAttribute("placeholder", "default to 'gadwords'");
+        tempInput12.setAttribute("class", "form-control");
+        divMod1.appendChild(tempInput12);
+      }
+    } else if (document.getElementById('idMod1') != null) {
+      divMod1.removeChild(document.getElementById('idMod1'));
+      divMod1.removeChild(document.getElementById('labMod'));
+      divMod1.hidden = true;
+      alert.hidden = true;
+      module1.checked = false;
+      module1.disabled = false;
+    }
+
+    if (document.getElementById('Myselect') == null && list != "") {
+      var i;
+      tempSelect = document.createElement('select');
+      tempSelect.setAttribute("name", "file");
+      tempSelect.setAttribute("id", "Myselect");
+      tempSelect.setAttribute("class", "form-control");
+      tempSelect.setAttribute("onchange", "changeSel2()");
+      DivToAdd1.appendChild(tempSelect);
+      var extension;
+
+      option0 = document.createElement("option");
+      option0.setAttribute("disabled", "true");
+      option0.setAttribute("selected", "true");
+      option0.setAttribute("value", "");
+      option0.innerHTML = "-- choisir un fichier --";
+      tempSelect.appendChild(option0);
+      for (i = 1; i < res1.length; i++) {
+        extension = res1[i].slice(-3);
+
+        if (res1[i] != '' && res1[i].includes('.js')) {
+          var option = document.createElement("option");
+          option.value = res1[i];
+          option.text = res1[i];
+
+          tempSelect.appendChild(option);
+        }
+      }
+
+    } else if (document.getElementById('Myselect') != null && list != "") {
+      DivToAdd1.removeChild(tempSelect);
+      var i;
+      tempSelect = document.createElement('select');
+      tempSelect.setAttribute("name", "file");
+      tempSelect.setAttribute("id", "Myselect");
+      tempSelect.setAttribute("class", "form-control");
+      tempSelect.setAttribute("onchange", "changeSel2()");
+      DivToAdd1.appendChild(tempSelect);
+      var extension;
+
+      option0 = document.createElement("option");
+      option0.setAttribute("disabled", "true");
+      option0.setAttribute("selected", "true");
+      option0.setAttribute("value", "");
+      option0.innerHTML = "-- choisir un fichier --";
+      tempSelect.appendChild(option0);
+      for (i = 1; i < res1.length; i++) {
+        extension = res1[i].slice(-3);
+
+        if (res1[i] != '' && res1[i].includes('.js')) {
+          var option = document.createElement("option");
+          option.value = res1[i];
+          option.text = res1[i];
+
+          tempSelect.appendChild(option);
+        }
+      }
+
+    } else if (document.getElementById('Myselect') != null && list == "") {
+      DivToAdd1.removeChild(tempSelect);
+
+    }
+
+  }
+  ///////***** creation des champs optionnels ****/////
+  //// URL//////
+  function handleChangeUrl1(checkbox) {
+    divUrl1 = document.getElementById('divUrl1');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idUrl1') == null) {
+        newlabel11 = document.createElement("Label");
+        newlabel11.setAttribute("for", "url1");
+        newlabel11.innerHTML = "Url (OPTIONAL):";
+        divUrl1.appendChild(newlabel11);
+
+
+        tempInput11 = document.createElement('input');
+        tempInput11.setAttribute("type", "text");
+        tempInput11.setAttribute("id", "idUrl1");
+        tempInput11.setAttribute("name", "url1");
+        tempInput11.setAttribute("placeholder", "default to 'localhost'");
+        tempInput11.setAttribute("class", "form-control");
+        divUrl1.appendChild(tempInput11);
+        divUrl1.hidden = false;
+      }
+    } else {
+      divUrl1.removeChild(tempInput11);
+      divUrl1.removeChild(newlabel11);
+      divUrl1.hidden = true;
+
+    }
+  }
+  /////// Module ////////////
+
+  function handleChangeMod1(checkbox) {
+    divMod1 = document.getElementById('divMod1');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idMod1') == null) {
+        newlabel12 = document.createElement("Label");
+        newlabel12.setAttribute("for", "module1");
+        newlabel12.setAttribute("id", "labMod");
+        newlabel12.innerHTML = "Module (OPTIONAL):";
+        divMod1.appendChild(newlabel12);
+
+
+        tempInput12 = document.createElement('input');
+        tempInput12.setAttribute("type", "text");
+        tempInput12.setAttribute("id", "idMod1");
+        tempInput12.setAttribute("name", "module1");
+        tempInput12.setAttribute("placeholder", "default to 'gadwords'");
+        tempInput12.setAttribute("class", "form-control");
+        divMod1.appendChild(tempInput12);
+        divMod1.hidden = false;
+      }
+    } else if (document.getElementById('idMod1') != null) {
+      divMod1.removeChild(document.getElementById('idMod1'));
+      divMod1.removeChild(document.getElementById('labMod'));
+      divMod1.hidden = true;
+    } else {
+      divMod1.removeChild(tempInput12);
+      divMod1.removeChild(newlabel12);
+      divMod1.hidden = true;
+
+    }
+  }
+
+  function handleChangeIns1(checkbox) {
+    divIns1 = document.getElementById('divIns1');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idIns1') == null) {
+        newlabel13 = document.createElement("Label");
+        newlabel13.setAttribute("for", "install");
+        newlabel13.innerHTML = "Install (OPTIONAL):";
+        divIns1.appendChild(newlabel13);
+        tempInput13 = document.createElement('select');
+        tempInput13.setAttribute("id", "idIns1");
+        tempInput13.setAttribute("name", "install1");
+        tempInput13.setAttribute("class", "form-control");
+        option11 = document.createElement("option");
+        option11.setAttribute("value", "true");
+        option11.innerHTML = "True";
+        option12 = document.createElement("option");
+        option12.setAttribute("value", "false");
+        option12.innerHTML = "False";
+        tempInput13.appendChild(option11);
+        tempInput13.appendChild(option12);
+        sm11 = document.createElement("small");
+        sm11.setAttribute("class", "form-text text-muted");
+        sm11.innerHTML = "Choisissez (True) si vous souhaitez exécuter le script d'installation ( false par défaut )";
+        divIns1.appendChild(tempInput13);
+        divIns1.appendChild(sm11);
+        divIns1.hidden = false;
+      }
+    } else {
+      divIns1.removeChild(tempInput13);
+      divIns1.removeChild(newlabel13);
+      divIns1.removeChild(sm11);
+      divIns1.hidden = true;
+
+    }
+
+  }
+
+  function handleChangeTes1(checkbox) {
+    divTes1 = document.getElementById('divTes1');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idTes1') == null) {
+        newlabel14 = document.createElement("Label");
+        newlabel14.setAttribute("for", "testAddons1");
+        newlabel14.innerHTML = "Test_AddOns (OPTIONAL):";
+        divTes1.appendChild(newlabel14);
+        tempInput14 = document.createElement('select');
+        tempInput14.setAttribute("id", "idTes1");
+        tempInput14.setAttribute("name", "testAddons1");
+        tempInput14.setAttribute("class", "form-control");
+        option13 = document.createElement("option");
+        option13.setAttribute("value", "true");
+        option13.innerHTML = "True";
+        option14 = document.createElement("option");
+        option14.setAttribute("value", "false");
+        option14.innerHTML = "False";
+        tempInput14.appendChild(option13);
+        tempInput14.appendChild(option14);
+        sm12 = document.createElement("small");
+        sm12.setAttribute("class", "form-text text-muted");
+        sm12.innerHTML =
+          "Choisissez (True) si vous souhaitez désactiver la vérification avec l’API Addons ( false par défaut )";
+        divTes1.appendChild(tempInput14);
+        divTes1.appendChild(sm12);
+        divTes1.hidden = false;
+      }
+    } else {
+      divTes1.removeChild(tempInput14);
+      divTes1.removeChild(newlabel14);
+      divTes1.removeChild(sm12);
+      divTes1.hidden = true;
+
+    }
+
+  }
+
+  function handleChangeLan1(checkbox) {
+    divLan1 = document.getElementById('divLan1');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idLan1') == null) {
+        newlabel15 = document.createElement("Label");
+        newlabel15.setAttribute("for", "language1");
+        newlabel15.innerHTML = "Language (OPTIONAL):";
+        divLan1.appendChild(newlabel15);
+
+
+        tempInput15 = document.createElement('input');
+        tempInput15.setAttribute("type", "text");
+        tempInput15.setAttribute("id", "idLan1");
+        tempInput15.setAttribute("name", "language1");
+        tempInput15.setAttribute("placeholder", "default to 'en'");
+        tempInput15.setAttribute("class", "form-control");
+        divLan1.appendChild(tempInput15);
+        divLan1.hidden = false;
+      }
+    } else {
+      divLan1.removeChild(tempInput15);
+      divLan1.removeChild(newlabel15);
+      divLan1.hidden = true;
+
+    }
+  }
+  //// Country//////
+  function handleChangeCou1(checkbox) {
+    divCou1 = document.getElementById('divCou1');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idCou1') == null) {
+        newlabel16 = document.createElement("Label");
+        newlabel16.setAttribute("for", "country");
+        newlabel16.innerHTML = "Country (OPTIONAL):";
+        divCou1.appendChild(newlabel16);
+
+
+        tempInput16 = document.createElement('input');
+        tempInput16.setAttribute("type", "text");
+        tempInput16.setAttribute("id", "idCou1");
+        tempInput16.setAttribute("name", "country1");
+        tempInput16.setAttribute("placeholder", "default to 'france'");
+        tempInput16.setAttribute("class", "form-control");
+        divCou1.appendChild(tempInput16);
+        divCou1.hidden = false;
+      }
+    } else {
+      divCou1.removeChild(tempInput16);
+      divCou1.removeChild(newlabel16);
+      divCou1.hidden = true;
+
+    }
+  }
+  //// DB_SERVER//////
+  function handleChangeDbS1(checkbox) {
+    divDbS1 = document.getElementById('divDbS1');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idDbS1') == null) {
+        newlabel17 = document.createElement("Label");
+        newlabel17.setAttribute("for", "dbServer1");
+        newlabel17.innerHTML = "Db_Server (OPTIONAL):";
+        divDbS1.appendChild(newlabel17);
+
+
+        tempInput17 = document.createElement('input');
+        tempInput17.setAttribute("type", "text");
+        tempInput17.setAttribute("id", "idDbS1");
+        tempInput17.setAttribute("name", "dbServer1");
+        tempInput17.setAttribute("placeholder", "default to 'mysql'");
+        tempInput17.setAttribute("class", "form-control");
+        divDbS1.appendChild(tempInput17);
+        divDbS1.hidden = false;
+      }
+    } else {
+      divDbS1.removeChild(tempInput17);
+      divDbS1.removeChild(newlabel17);
+      divDbS1.hidden = true;
+
+    }
+  }
+  //// DB_User//////
+  function handleChangeDbU1(checkbox) {
+    divDbU1 = document.getElementById('divDbU1');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idDbU1') == null) {
+        newlabel18 = document.createElement("Label");
+        newlabel18.setAttribute("for", "dbUser1");
+        newlabel18.innerHTML = "Db_User (OPTIONAL):";
+        divDbU1.appendChild(newlabel18);
+
+
+        tempInput18 = document.createElement('input');
+        tempInput18.setAttribute("type", "text");
+        tempInput18.setAttribute("id", "idDbU1");
+        tempInput18.setAttribute("name", "dbUser1");
+        tempInput18.setAttribute("placeholder", "default to 'root'");
+        tempInput18.setAttribute("class", "form-control");
+        divDbU1.appendChild(tempInput18);
+        divDbU1.hidden = false;
+      }
+    } else {
+      divDbU1.removeChild(tempInput18);
+      divDbU1.removeChild(newlabel18);
+      divDbU1.hidden = true;
+
+    }
+  }
+  //// DB_PWD//////
+  function handleChangeDbP1(checkbox) {
+    divDbP1 = document.getElementById('divDbP1');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idDbP1') == null) {
+        newlabel19 = document.createElement("Label");
+        newlabel19.setAttribute("for", "dbPwd1");
+        newlabel19.innerHTML = "Db_Password (OPTIONAL):";
+        divDbP1.appendChild(newlabel19);
+
+
+        tempInput19 = document.createElement('input');
+        tempInput19.setAttribute("type", "text");
+        tempInput19.setAttribute("id", "idDbP1");
+        tempInput19.setAttribute("name", "dbPwd1");
+        tempInput19.setAttribute("placeholder", "default to 'doge'");
+        tempInput19.setAttribute("class", "form-control");
+        divDbP1.appendChild(tempInput19);
+        divDbP1.hidden = false;
+      }
+    } else {
+      divDbP1.removeChild(tempInput19);
+      divDbP1.removeChild(newlabel19);
+      divDbP1.hidden = true;
+
+    }
+  }
+  //// DB_E_PWD//////
+  function handleChangeDbEP1(checkbox) {
+    divDbEP1 = document.getElementById('divDbEP1');
+    if (checkbox.checked == true) {
+      if (document.getElementById('idDbEP1') == null) {
+        newlabel110 = document.createElement("Label");
+        newlabel110.setAttribute("for", "dbEPwd1");
+        newlabel110.innerHTML = "Db_Empty_Password (OPTIONAL):";
+        divDbEP1.appendChild(newlabel110);
+        tempInput110 = document.createElement('select');
+        tempInput110.setAttribute("id", "idDbEP1");
+        tempInput110.setAttribute("name", "dbEPwd1");
+        tempInput110.setAttribute("class", "form-control");
+        option15 = document.createElement("option");
+        option15.setAttribute("value", "true");
+        option15.innerHTML = "True";
+        option16 = document.createElement("option");
+        option16.setAttribute("value", "false");
+        option16.innerHTML = "False";
+        tempInput110.appendChild(option15);
+        tempInput110.appendChild(option16);
+        sm12 = document.createElement("small");
+        sm12.setAttribute("class", "form-text text-muted");
+        sm12.innerHTML = "Si vous n'avez pas un mot de pas2se, choisir 'True'.";
+        divDbEP1.appendChild(tempInput110);
+        divDbEP1.appendChild(sm12);
+        divDbEP1.hidden = false;
+      }
+    } else {
+      divDbEP1.removeChild(tempInput110);
+      divDbEP1.removeChild(newlabel110);
+      divDbEP1.removeChild(sm12);
+      divDbEP1.hidden = true;
+
+    }
+  }
+
+  function generateCmd1() {
+    url1 = "";
+    if (document.getElementById('idUrl1') != null && document.getElementById('idUrl1').value != "") {
+
+      url1 = " --URL=" + document.getElementById('idUrl1').value;
+    }
+    module1 = "";
+    moduleCheck = document.getElementById("module1");
+    if (document.getElementById('idMod1') != null && document.getElementById('idMod1').value != "") {
+
+      module1 = " --MODULE=" + document.getElementById('idMod1').value;
+    } else if (document.getElementById('idMod1') != null && document.getElementById('idMod1').value == "" &&
+      moduleCheck.disabled) {
+      swal({
+        title: "Attention !",
+        text: "Vous devez selectionner le Module à installer",
+        icon: "error",
+        button: "D'accord",
+      });
+      return false;
+    }
+    installBox1 = document.getElementById('idIns1');
+    install1 = "";
+    if (installBox1 != null) {
+      install1 = " --INSTALL=" + installBox1.options[installBox1.selectedIndex].value;
+    }
+
+    testAddonsBox1 = document.getElementById('idTes1');
+    testAddons1 = "";
+    if (testAddonsBox1 != null) {
+      testAddons1 = " --TEST_ADDONS=" + testAddonsBox1.options[testAddonsBox1.selectedIndex].value;
+    }
+    language1 = "";
+    if (document.getElementById('idLan1') != null && document.getElementById('idLan1').value != "") {
+
+      language1 = " --LANGUAGE=" + document.getElementById('idLan1').value;
+    }
+    country1 = "";
+    if (document.getElementById('idCou1') != null && document.getElementById('idCou1').value != "") {
+
+      country1 = " --COUNTRY=" + document.getElementById('idCou1').value;
+    }
+    dbServer1 = "";
+    if (document.getElementById('idDbS1') != null && document.getElementById('idDbS1').value != "") {
+
+      dbServer1 = " --DB_SERVER=" + document.getElementById('idDbS1').value;
+    }
+    dbUser1 = "";
+    if (document.getElementById('idDbU1') != null && document.getElementById('idDbU1').value != "") {
+
+      dbUser1 = " --DB_USER=" + document.getElementById('idDbU1').value;
+    }
+    dbPwd1 = "";
+    if (document.getElementById('idDbP1') != null && document.getElementById('idDbP1').value != "") {
+
+      dbPwd1 = " --DB_PASSWD=" + document.getElementById('idDbP1').value;
+    }
+    dbEmptyPwdBox1 = document.getElementById('idDbEP1');
+    dbEmptyPwd1 = "";
+    if (dbEmptyPwdBox1 != null) {
+      dbEmptyPwd1 = " --DB_EMPTY_PASSWD=" + dbEmptyPwdBox1.options[dbEmptyPwdBox1.selectedIndex].value;
+    }
+    var selectBox = document.getElementById("path");
+
+    var path = selectBox.options[selectBox.selectedIndex].value;
+    if (path == '') {
+      swal({
+        title: "Attention !",
+        text: "Vous devez selectionner un Path d'abord",
+        icon: "error",
+        button: "D'accord",
+      });
+      return false;
+    }
+    var file = '';
+    var selectBox2 = document.getElementById("Myselect");
+    if (selectBox2 != null) {
+      file = '/' + selectBox2.options[selectBox2.selectedIndex].value;
+    }
+
+    var cmd1;
+    if (url1 == "" && module1 == "" && install1 == "" && testAddons1 == "" && language1 == "" && country1 == "" &&
+      dbServer1 == "" && dbUser1 == "" && dbServer1 == "" && dbPwd1 == "" && dbEmptyPwd1 == "") {
+      cmd1 = "path=regular/" + path + file + " npm run specific-test";
+
+    } else {
+      cmd1 = "path=regular/" + path + file + " npm run specific-test --" + url1 + module1 + install1 + testAddons1 +
+        language1 + country1 + dbServer1 + dbUser1 + dbPwd1 + dbEmptyPwd1;
+
+    }
+    swal({
+      title: "Votre commande est :",
+      text: cmd1,
+      icon: "success",
+      button: "D'accord",
+    });
+  }
+
+  function generateCmd() {
+    url = "";
+    if (document.getElementById('idUrl') != null && document.getElementById('idUrl').value != "") {
+
+      url = " --URL=" + document.getElementById('idUrl').value;
+    }
+    module = "";
+    if (document.getElementById('idMod') != null && document.getElementById('idMod').value != "") {
+
+      module = " --MODULE=" + document.getElementById('idMod').value;
+    }
+    installBox = document.getElementById('idIns');
+    install = "";
+    if (installBox != null) {
+      install = " --INSTALL=" + installBox.options[installBox.selectedIndex].value;
+    }
+
+    testAddonsBox = document.getElementById('idTes');
+    testAddons = "";
+    if (testAddonsBox != null) {
+      testAddons = " --TEST_ADDONS=" + testAddonsBox.options[testAddonsBox.selectedIndex].value;
+    }
+    language = "";
+    if (document.getElementById('idLan') != null && document.getElementById('idLan').value != "") {
+
+      language = " --LANGUAGE=" + document.getElementById('idLan').value;
+    }
+    country = "";
+    if (document.getElementById('idCou') != null && document.getElementById('idCou').value != "") {
+
+      country = " --COUNTRY=" + document.getElementById('idCou').value;
+    }
+    dbServer = "";
+    if (document.getElementById('idDbS') != null && document.getElementById('idDbS').value != "") {
+
+      dbServer = " --DB_SERVER=" + document.getElementById('idDbS').value;
+    }
+    dbUser = "";
+    if (document.getElementById('idDbU') != null && document.getElementById('idDbU').value != "") {
+
+      dbUser = " --DB_USER=" + document.getElementById('idDbU').value;
+    }
+    dbPwd = "";
+    if (document.getElementById('idDbP') != null && document.getElementById('idDbP').value != "") {
+
+      dbPwd = " --DB_PASSWD=" + document.getElementById('idDbP').value;
+    }
+    dbEmptyPwdBox = document.getElementById('idDbEP');
+    dbEmptyPwd = "";
+    if (dbEmptyPwdBox != null) {
+      dbEmptyPwd = " --DB_EMPTY_PASSWD=" + dbEmptyPwdBox.options[dbEmptyPwdBox.selectedIndex].value;
+    }
+    var cmd;
+    if (url == "" && module == "" && install == "" && testAddons == "" && language == "" && country == "" && dbServer ==
+      "" && dbUser == "" && dbServer == "" && dbPwd == "" && dbEmptyPwd == "") {
+      cmd = "npm test";
+
+    } else {
+      cmd = "npm test --" + url + module + install + testAddons + language + country + dbServer + dbUser + dbPwd +
+        dbEmptyPwd;
+
+    }
+    swal({
+      title: "Votre commande est :",
+      text: cmd,
+      icon: "success",
+      button: "OK",
+    });
+  }
+</script>
+<ul id="list1" hidden>
+  {% set nb = 0 %} {% for file in list1 %} {% set nb = nb + 1 %}
+  <li data-value="{{file}}" id="li{{ nb }}" hidden>{{file}}</option>
+      {% endfor %}</li>
+</ul>
+<hr>
+<div class="row">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-reg" role="tab"
+        aria-controls="home">Test Régulier complet</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-spec" role="tab"
+        aria-controls="profile">Test Régulier Spécifique</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab"
+        aria-controls="messages">informations utiles</a>
+
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-reg" role="tabpanel" aria-labelledby="list-home-list">
+        <div class="alert alert-info" role="alert">
+          <h5 class="alert-heading">
+            <i class="fas fa-exclamation-circle"></i> Remarque:</h5>
+          <hr> Si vous souhaitez exécuter uniquement les tests de configuration partielle les plus importants et que
+          <b>PrestaShop</b> est installé sur votre
+          <b>localhost</b>, vous pouvez simplement cliquer sur
+          <b>"Lancer le Test"</b>
+        </div>
+        <form action="{{path('prestaShop_test_aff_reg')}}" class="form-horizontal">
+          <div class="card card-body">
+            <p>Veuiller cocher les champs optionels désirés</p>
+            <table>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="url" id="url" onchange='handleChangeUrl(this);'>
+                    <label class="form-check-label" for="url">
+                      Url
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="module" id="module" onchange='handleChangeMod(this);'>
+                    <label class="form-check-label" for="module">
+                      Module
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="install" id="install" onchange='handleChangeIns(this);'>
+                    <label class="form-check-label" for="install">
+                      Install
+                    </label>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="testAddons" id="testAddons" onchange='handleChangeTes(this);'>
+                    <label class="form-check-label" for="testAddons">
+                      TestAddons
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="language" id="language" onchange='handleChangeLan(this);'>
+                    <label class="form-check-label" for="language">
+                      Language
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="country" id="country" onchange='handleChangeCou(this);'>
+                    <label class="form-check-label" for="country">
+                      Country
+                    </label>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="dbServer" id="dbServer" onchange='handleChangeDbS(this);'>
+                    <label class="form-check-label" for="dbServer">
+                      DbServer
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="dbUser" id="dbUser" onchange='handleChangeDbU(this);'>
+                    <label class="form-check-label" for="dbUser">
+                      DbUser
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="dbPwd" id="dbPwd" onchange='handleChangeDbPwd(this);'>
+                    <label class="form-check-label" for="dbPwd">
+                      DbPwd
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="dbEmptyPwd" id="dbEmptyPwd" onchange='handleChangeEPwd(this);'>
+                    <label class="form-check-label" for="dbEmptyPwd">
+                      DbEmptyPwd
+                    </label>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+          <br>
+          <div class="form-group" id="divUrl" hidden></div>
+          <div class="form-group" id="divMod" hidden></div>
+          <div class="form-group" id="divIns" hidden></div>
+          <div class="form-group" id="divTes" hidden></div>
+          <div class="form-group" id="divLan" hidden></div>
+          <div class="form-group" id="divCou" hidden></div>
+          <div class="form-group" id="divDbS" hidden></div>
+          <div class="form-group" id="divDbU" hidden></div>
+          <div class="form-group" id="divDbP" hidden></div>
+          <div class="form-group" id="divDbEP" hidden></div>
+          <br>
+          <div class="form-group" id="divBtn">
+
+            <input type="submit" class="btn btn-primary btn-block" value="Lancer le Test">
+          </div>
+
+        </form>
+
+        <button class="btn btn-warning btn-block" id="genBtn" onclick="generateCmd()">Générer la commande</button>
+
+      </div>
+      <div class="tab-pane fade" id="list-spec" role="tabpanel" aria-labelledby="list-profile-list">
+
+        <div class="alert alert-danger" role="alert" hidden id="alertId">
+          <h5 class="alert-heading">
+            <i class="fas fa-exclamation-triangle"></i> Attention!</h5>
+          <hr> Si vous voulez exécuter regular/02_install_module.js, vous devez définir l'option
+          <b>MODULE</b>
+        </div>
+
+
+        <form action="{{path('prestaShop_test_reg_spec_aff')}}" id="divTest" class="form-horizontal">
+          <div class="card card-body">
+            <p>Veuiller cocher les champs optionels désirés</p>
+
+            <table>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="url1" id="url1" onchange='handleChangeUrl1(this);'>
+                    <label class="form-check-label" for="url1">
+                      Url
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="module1" id="module1" onchange='handleChangeMod1(this);'>
+                    <label class="form-check-label" for="module1">
+                      Module
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="install1" id="install1" onchange='handleChangeIns1(this);'>
+                    <label class="form-check-label" for="install1">
+                      Install
+                    </label>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="testAddons1" id="testAddons1" onchange='handleChangeTes1(this);'>
+                    <label class="form-check-label" for="testAddons1">
+                      TestAddons
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="language1" id="language1" onchange='handleChangeLan1(this);'>
+                    <label class="form-check-label" for="language1">
+                      Language
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="country1" id="country1" onchange='handleChangeCou1(this);'>
+                    <label class="form-check-label" for="country1">
+                      Country
+                    </label>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="dbServer1" id="dbServer1" onchange='handleChangeDbS1(this);'>
+                    <label class="form-check-label" for="dbServer1">
+                      DbServer
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="dbUser1" id="dbUser1" onchange='handleChangeDbU1(this);'>
+                    <label class="form-check-label" for="dbUser1">
+                      DbUser
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="dbPwd1" id="dbPwd1" onchange='handleChangeDbP1(this);'>
+                    <label class="form-check-label" for="dbPwd1">
+                      DbPwd
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="dbEmptyPwd1" id="dbEmptyPwd1" onchange='handleChangeDbEP1(this);'>
+                    <label class="form-check-label" for="dbEmptyPwd1">
+                      DbEmptyPwd
+                    </label>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="form-group">
+            <label for="path">Path :</label>
+            <select class="form-control" id="path" name="path" onchange="changeFunc()">
+
+              <option value="" disabled selected>-- Selectionner le path --</option>
+              {% set nb = 1 %} {% for path in list %} {% set nb = nb + 1 %}
+              <option value="{{path}}" id="{{ nb }}">{{path}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="form-group" id="DivToAdd1">
+          </div>
+          <div class="form-group" id="divUrl1" hidden></div>
+          <div class="form-group" id="divMod1" hidden></div>
+          <div class="form-group" id="divIns1" hidden></div>
+          <div class="form-group" id="divTes1" hidden></div>
+          <div class="form-group" id="divLan1" hidden></div>
+          <div class="form-group" id="divCou1" hidden></div>
+          <div class="form-group" id="divDbS1" hidden></div>
+          <div class="form-group" id="divDbU1" hidden></div>
+          <div class="form-group" id="divDbP1" hidden></div>
+          <div class="form-group" id="divDbEP1" hidden></div>
+          <div class="form-group" id="divBtn1">
+            <input type="submit" class="btn btn-primary btn-block" value="Lancer le Test">
+          </div>
+        </form>
+
+        <button class="btn btn-warning btn-block" id="genBtn1" onclick="generateCmd1()">Générer la commande</button>
+
+      </div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Ici des informations utiles</div>
+
+
+
+
+    </div>
+
+  </div>
+
+
+  {% endblock %}
