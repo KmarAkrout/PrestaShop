@@ -5,7 +5,7 @@ use Symfony\Component\Process\Process;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 class CommandExec {
 
-  public function ExecComm(){
+  public function ExecComm($cmd,$path){
 
     $move_to_project = '/home/kmar/www/PrestaShop/tests/E2E';
     $response = new StreamedResponse();
