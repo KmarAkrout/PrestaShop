@@ -1,0 +1,36 @@
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: right;
+
+}
+
+/*div.gallery:hover {
+    border: 1px solid #777;
+}*/
+
+div.gallery img {
+    width: 100%;
+    /*height: auto;*/
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.column1 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.row1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+iframe {
+    height: 800px;
+    width: 100%;
+    border: none;
+}

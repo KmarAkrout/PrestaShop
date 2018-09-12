@@ -1,0 +1,77 @@
+{% extends "PrestaShopTestBundle::layout.html.twig" %}
+
+{% block title %}
+    Launch Test - {{ parent() }}
+{% endblock %}
+
+{% block prestaShopTest_body %}
+    <button type="button" id="start" class="btn btn-outline-success btn-block">
+        <i class="fas fa-angle-double-right"></i>
+        <span>Start Test</span>
+    </button>
+    <button type="button" id="stop" class="btn btn-outline-danger btn-block" style="display:none">
+        <i class="fas fa-times"></i>
+        <span>Stop Test</span>
+    </button>
+    <hr>
+        <nav id="sidebar" style="background-color: #383d41; display: none">
+            <iframe id="frame" scrolling="auto">
+
+            </iframe>
+        </nav>
+    <script>
+
+        $('#start').on('click', function () {
+            $('#start').hide();
+            $('#note').hide();
+            $('#stop').show();
+            $('#sidebar').show();
+            var testType="{{ app.request.query.get('testType') }}";
+            switch (testType){
+                case "regular" : $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& INSTALL={{ app.request.query.get('INSTALL') }}& TEST_ADDONS={{ app.request.query.get('TEST_ADDONS') }}& LANGUAGE={{ app.request.query.get('LANGUAGE') }}& COUNTRY={{ app.request.query.get('COUNTRY') }}& DB_SERVER={{ app.request.query.get('DB_SERVER') }}& DB_USER={{ app.request.query.get('DB_USER') }}& DB_PASSWD={{ app.request.query.get('DB_PASSWD') }}& DB_EMPTY_PASSWD={{ app.request.query.get('DB_EMPTY_PASSWD') }}& testType={{ app.request.query.get('testType') }}");
+                     ;break;
+                case "regularSpec" :$('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& INSTALL={{ app.request.query.get('INSTALL') }}& TEST_ADDONS={{ app.request.query.get('TEST_ADDONS') }}& LANGUAGE={{ app.request.query.get('LANGUAGE') }}& COUNTRY={{ app.request.query.get('COUNTRY') }}& DB_SERVER={{ app.request.query.get('DB_SERVER') }}& DB_USER={{ app.request.query.get('DB_USER') }}& DB_PASSWD={{ app.request.query.get('DB_PASSWD') }}& DB_EMPTY_PASSWD={{ app.request.query.get('DB_EMPTY_PASSWD') }}& folder={{ app.request.query.get('folder') }}& file={{ app.request.query.get('file') }}& testType={{ app.request.query.get('testType') }}");
+                    ;break;
+                case "high" :$('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& DIR={{ app.request.query.get('DIR') }} & testType={{ app.request.query.get('testType') }}");
+                    ; break;
+                case "highSpec" :$('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& DIR={{ app.request.query.get('DIR') }}& folder={{ app.request.query.get('folder') }}& file={{ app.request.query.get('file') }} & HEADLESS={{ app.request.query.get('HEADLESS') }}& testType={{ app.request.query.get('testType') }} ");
+                    ;break;
+                case "full" :$('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& MODULE={{ app.request.query.get('MODULE') }}& DIR={{ app.request.query.get('DIR') }} & testType={{ app.request.query.get('testType') }} ");
+                    ;break;
+                case "fullSpec" : $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& DIR={{ app.request.query.get('DIR') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& folder={{ app.request.query.get('folder') }}& file={{ app.request.query.get('file') }} & testType={{ app.request.query.get('testType') }} ");
+                    ;break;
+                case "install" : $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?HEADLESS={{ app.request.query.get('HEADLESS') }}& DIR={{ app.request.query.get('DIR') }}& URLLASTSTABLEVERSION={{ app.request.query.get('URLLASTSTABLEVERSION') }}& RCTARGET={{ app.request.query.get('RCTARGET') }}& RCLINK={{ app.request.query.get('RCLINK') }}& URL={{ app.request.query.get('URL') }}& LANGUAGE={{ app.request.query.get('LANGUAGE') }}& COUNTRY={{ app.request.query.get('COUNTRY') }}& DB_SERVER={{ app.request.query.get('DB_SERVER') }}& DB_USER={{ app.request.query.get('DB_USER') }}& DB_PASSWD={{ app.request.query.get('DB_PASSWD') }}& FILENAME={{ app.request.query.get('FILENAME') }}& DB_EMPTY_PASSWD={{ app.request.query.get('DB_EMPTY_PASSWD') }}& testType={{ app.request.query.get('testType') }} ");
+                    ;break;
+                case "installSpec" : $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?HEADLESS={{ app.request.query.get('HEADLESS') }}& DIR={{ app.request.query.get('DIR') }}& URLLASTSTABLEVERSION={{ app.request.query.get('URLLASTSTABLEVERSION') }}& RCTARGET={{ app.request.query.get('RCTARGET') }}& RCLINK={{ app.request.query.get('RCLINK') }}& URL={{ app.request.query.get('URL') }}& LANGUAGE={{ app.request.query.get('LANGUAGE') }}& COUNTRY={{ app.request.query.get('COUNTRY') }}& DB_SERVER={{ app.request.query.get('DB_SERVER') }}& DB_USER={{ app.request.query.get('DB_USER') }}& DB_PASSWD={{ app.request.query.get('DB_PASSWD') }}& DB_EMPTY_PASSWD={{ app.request.query.get('DB_EMPTY_PASSWD') }}& FILENAME={{ app.request.query.get('FILENAME') }}& file={{ app.request.query.get('file') }}& folder={{ app.request.query.get('folder') }} & testType={{ app.request.query.get('testType') }}");
+                    ;break;
+
+            }
+
+        });
+
+        $('#stop').on('click', function () {
+            $.confirm({
+                title: 'This Might Take A While...',
+                content: ' ',
+                type: 'dark',
+                typeAnimated: true,
+                buttons: {
+                    tryAgain: {
+                        isHidden: true,
+                    },
+
+                }
+            });
+            $('#frame').attr("src", "");
+            $.ajax({
+                url: "/kill",
+                success:
+                    function (data) {
+
+                        window.location.href = "/";
+                    },
+            });
+        });
+    </script>
+
+{% endblock %}

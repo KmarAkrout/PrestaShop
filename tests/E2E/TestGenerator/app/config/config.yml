@@ -38,7 +38,8 @@ twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
     globals:
-        prestashop: "@prestashop_test.execcommand"
+        ManageFiles: "@prestaShop_test.ManageFiles"
+        TestResults: "@prestaShop_test.TestResults"
     cache: false
 
 # Doctrine Configuration

@@ -1,3 +1,9 @@
 services:
     prestaShop_test.execcommand:
         class: PrestaShop\TestBundle\ExecCommand\CommandExec
+    prestaShop_test.ManageParams:
+        class: PrestaShop\TestBundle\ManageParamsService\ManageParams
+    prestaShop_test.ManageFiles:
+        class: PrestaShop\TestBundle\ManageFilesService\ManageFiles
+    prestaShop_test.TestResults:
+        class: PrestaShop\TestBundle\TestResultsService\TestResults

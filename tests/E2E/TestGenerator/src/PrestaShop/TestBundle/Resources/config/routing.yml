@@ -1,12 +1,6 @@
 prestaShop_test_homepage:
     path:     /
     defaults: { _controller: PrestaShopTestBundle:Test:index }
-prestaShop_test_mocha:
-    path:     /mocha
-    defaults: { _controller: PrestaShopTestBundle:Test:mocha }
-prestaShop_test_screen_shot:
-    path:     /screenShot
-    defaults: { _controller: PrestaShopTestBundle:Test:screenShot }
 prestaShop_test_regular:
     path:     /regular
     defaults: { _controller: PrestaShopTestBundle:Test:regular }
@@ -19,54 +13,18 @@ prestaShop_test_high:
 prestaShop_test_full:
     path:     /full
     defaults: { _controller: PrestaShopTestBundle:Test:full }
-prestaShop_test_aff_reg:
-    path:     /affReg
-    defaults: { _controller: PrestaShopTestBundle:Test:affExecReg }
-prestaShop_test_aff_high:
-    path:     /affHigh
-    defaults: { _controller: PrestaShopTestBundle:Test:affExecHigh }
-prestaShop_test_aff_full:
-    path:     /affFull
-    defaults: { _controller: PrestaShopTestBundle:Test:affExecFull }
-prestaShop_test_aff_install:
-    path:     /affInstall
-    defaults: { _controller: PrestaShopTestBundle:Test:affExecInstall }
-prestaShop_test_aff_spec_install:
-    path:     /affSpecInstall
-    defaults: { _controller: PrestaShopTestBundle:Test:affExecSpecInstall }
-prestaShop_test_aff_spec_full:
-    path:     /affSpecFull
-    defaults: { _controller: PrestaShopTestBundle:Test:affExecSpecFull }
-prestaShop_test_aff_spec_high:
-    path:     /affSpecHigh
-    defaults: { _controller: PrestaShopTestBundle:Test:affExecSpecHigh }
-prestaShop_test_cmd:
-    path:    /exec
-    defaults: { _controller: PrestaShopTestBundle:Test:exe }
+prestaShop_test_display:
+    path:     /display
+    defaults: { _controller: PrestaShopTestBundle:Test:display }
 prestaShop_test_kill:
     path:    /kill
     defaults: { _controller: PrestaShopTestBundle:Test:kill }
-prestaShop_test_reg_spec:
-    path:    /execRegSpec
-    defaults: { _controller: PrestaShopTestBundle:Test:execRegSpec }
-prestaShop_test_reg_spec_aff:
-    path:    /affRegSpec
-    defaults: { _controller: PrestaShopTestBundle:Test:affExecRegSpec }
-prestaShop_test_high_spec:
-    path:    /execHighSpec
-    defaults: { _controller: PrestaShopTestBundle:Test:execHighSpec }
-prestaShop_test_exec_high:
-    path:    /execHigh
-    defaults: { _controller: PrestaShopTestBundle:Test:execHigh }
-prestaShop_test_full_spec:
-    path:    /execFullSpec
-    defaults: { _controller: PrestaShopTestBundle:Test:execFullSpec }
-prestaShop_test_exec_full:
-    path:    /execFull
-    defaults: { _controller: PrestaShopTestBundle:Test:execFull }
-prestaShop_test_exec_install:
-    path:    /execInstall
-    defaults: { _controller: PrestaShopTestBundle:Test:execInstall }
-prestaShop_test_exec_spec_install:
-    path:    /execSpecInstall
-    defaults: { _controller: PrestaShopTestBundle:Test:execSpecInstall }
+prestaShop_test_launchTest:
+    path:    /LaunchTest
+    defaults: { _controller: PrestaShopTestBundle:Test:launchTest }
+prestaShop_test_get_files:
+    path:    /getFiles
+    defaults: { _controller: PrestaShopTestBundle:Test:getFiles }
+prestaShop_test_get_screenShots:
+    path:    /getScreenShots
+    defaults: { _controller: PrestaShopTestBundle:Test:getScreenShot }
