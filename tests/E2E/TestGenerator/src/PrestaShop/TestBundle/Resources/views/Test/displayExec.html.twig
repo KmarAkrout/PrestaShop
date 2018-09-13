@@ -14,41 +14,162 @@
         <span>Stop Test</span>
     </button>
     <hr>
-        <nav id="sidebar" style="background-color: #383d41; display: none">
-            <iframe id="frame" scrolling="auto">
+    <div class="row">
+        <div class="col-md-6">
+            <nav id="sidebar" style="background-color: black; display: none">
+                <iframe id="frame" scrolling="auto">
 
-            </iframe>
-        </nav>
+                </iframe>
+            </nav>
+        </div>
+        <div class="col-md-6">
+            <div class="alert alert-success" role="alert" id="screen" style="display: none">
+                <i class="fa fa-image"></i>
+                <span>Test ScreenShots</span>
+            </div>
+
+            <div id="loadingScreenShots" style="display: none">
+                <img src="../assets/imgs/loader.gif"
+                     style=" display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="row1">
+                <div id="links">
+
+
+                </div>
+
+            </div>
+            <br>
+            <button type="button" id="report" class="btn btn-outline-warning btn-block" style="display:none">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                <span>Download Test Report</span>
+            </button>
+            <div id="loadingReports" style="display: none">
+                <img src="../assets/imgs/loader.gif"
+                     style=" display: block; margin-left: auto; margin-right: auto;">
+            </div>
+
+
+            <div id="divReports" style="display: none">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" id="frameHtml"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
+        var date;
+        var testType = "{{ app.request.query.get('testType') }}";
+        $('#report').on('click', function () {
 
+            $.ajax({
+                url: "/getReports",
+                success:
+                    function (data) {
+                        $('#frameHtml').attr("src", "../assets/mochawesome-report/test_report.html");
+                        //console.log(data);
+
+                    },
+                complete: function () {
+
+                }
+            });
+        });
         $('#start').on('click', function () {
             $('#start').hide();
             $('#note').hide();
             $('#stop').show();
             $('#sidebar').show();
-            var testType="{{ app.request.query.get('testType') }}";
-            switch (testType){
-                case "regular" : $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& INSTALL={{ app.request.query.get('INSTALL') }}& TEST_ADDONS={{ app.request.query.get('TEST_ADDONS') }}& LANGUAGE={{ app.request.query.get('LANGUAGE') }}& COUNTRY={{ app.request.query.get('COUNTRY') }}& DB_SERVER={{ app.request.query.get('DB_SERVER') }}& DB_USER={{ app.request.query.get('DB_USER') }}& DB_PASSWD={{ app.request.query.get('DB_PASSWD') }}& DB_EMPTY_PASSWD={{ app.request.query.get('DB_EMPTY_PASSWD') }}& testType={{ app.request.query.get('testType') }}");
-                     ;break;
-                case "regularSpec" :$('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& INSTALL={{ app.request.query.get('INSTALL') }}& TEST_ADDONS={{ app.request.query.get('TEST_ADDONS') }}& LANGUAGE={{ app.request.query.get('LANGUAGE') }}& COUNTRY={{ app.request.query.get('COUNTRY') }}& DB_SERVER={{ app.request.query.get('DB_SERVER') }}& DB_USER={{ app.request.query.get('DB_USER') }}& DB_PASSWD={{ app.request.query.get('DB_PASSWD') }}& DB_EMPTY_PASSWD={{ app.request.query.get('DB_EMPTY_PASSWD') }}& folder={{ app.request.query.get('folder') }}& file={{ app.request.query.get('file') }}& testType={{ app.request.query.get('testType') }}");
-                    ;break;
-                case "high" :$('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& DIR={{ app.request.query.get('DIR') }} & testType={{ app.request.query.get('testType') }}");
-                    ; break;
-                case "highSpec" :$('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& DIR={{ app.request.query.get('DIR') }}& folder={{ app.request.query.get('folder') }}& file={{ app.request.query.get('file') }} & HEADLESS={{ app.request.query.get('HEADLESS') }}& testType={{ app.request.query.get('testType') }} ");
-                    ;break;
-                case "full" :$('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& MODULE={{ app.request.query.get('MODULE') }}& DIR={{ app.request.query.get('DIR') }} & testType={{ app.request.query.get('testType') }} ");
-                    ;break;
-                case "fullSpec" : $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& DIR={{ app.request.query.get('DIR') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& folder={{ app.request.query.get('folder') }}& file={{ app.request.query.get('file') }} & testType={{ app.request.query.get('testType') }} ");
-                    ;break;
-                case "install" : $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?HEADLESS={{ app.request.query.get('HEADLESS') }}& DIR={{ app.request.query.get('DIR') }}& URLLASTSTABLEVERSION={{ app.request.query.get('URLLASTSTABLEVERSION') }}& RCTARGET={{ app.request.query.get('RCTARGET') }}& RCLINK={{ app.request.query.get('RCLINK') }}& URL={{ app.request.query.get('URL') }}& LANGUAGE={{ app.request.query.get('LANGUAGE') }}& COUNTRY={{ app.request.query.get('COUNTRY') }}& DB_SERVER={{ app.request.query.get('DB_SERVER') }}& DB_USER={{ app.request.query.get('DB_USER') }}& DB_PASSWD={{ app.request.query.get('DB_PASSWD') }}& FILENAME={{ app.request.query.get('FILENAME') }}& DB_EMPTY_PASSWD={{ app.request.query.get('DB_EMPTY_PASSWD') }}& testType={{ app.request.query.get('testType') }} ");
-                    ;break;
-                case "installSpec" : $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?HEADLESS={{ app.request.query.get('HEADLESS') }}& DIR={{ app.request.query.get('DIR') }}& URLLASTSTABLEVERSION={{ app.request.query.get('URLLASTSTABLEVERSION') }}& RCTARGET={{ app.request.query.get('RCTARGET') }}& RCLINK={{ app.request.query.get('RCLINK') }}& URL={{ app.request.query.get('URL') }}& LANGUAGE={{ app.request.query.get('LANGUAGE') }}& COUNTRY={{ app.request.query.get('COUNTRY') }}& DB_SERVER={{ app.request.query.get('DB_SERVER') }}& DB_USER={{ app.request.query.get('DB_USER') }}& DB_PASSWD={{ app.request.query.get('DB_PASSWD') }}& DB_EMPTY_PASSWD={{ app.request.query.get('DB_EMPTY_PASSWD') }}& FILENAME={{ app.request.query.get('FILENAME') }}& file={{ app.request.query.get('file') }}& folder={{ app.request.query.get('folder') }} & testType={{ app.request.query.get('testType') }}");
-                    ;break;
+            arrDate = new Date().toLocaleString('en-gb').split(",");
+            arrDate1 = arrDate[0].split("/");
+            x = arrDate1[0];
+            arrDate1[0] = arrDate1[2];
+            arrDate1[2] = x;
+            date = arrDate1[0] + "-" + arrDate1[1] + "-" + arrDate1[2] + arrDate[1];
+            var n = date.lastIndexOf(":");
+            var del = date.substring(n);
+            date = date.replace(del, "");
+
+
+            switch (testType) {
+                case "regular" :
+                    $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& INSTALL={{ app.request.query.get('INSTALL') }}& TEST_ADDONS={{ app.request.query.get('TEST_ADDONS') }}& LANGUAGE={{ app.request.query.get('LANGUAGE') }}& COUNTRY={{ app.request.query.get('COUNTRY') }}& DB_SERVER={{ app.request.query.get('DB_SERVER') }}& DB_USER={{ app.request.query.get('DB_USER') }}& DB_PASSWD={{ app.request.query.get('DB_PASSWD') }}& DB_EMPTY_PASSWD={{ app.request.query.get('DB_EMPTY_PASSWD') }}& testType={{ app.request.query.get('testType') }}");
+                    ;
+                    break;
+                case "regularSpec" :
+                    $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& INSTALL={{ app.request.query.get('INSTALL') }}& TEST_ADDONS={{ app.request.query.get('TEST_ADDONS') }}& LANGUAGE={{ app.request.query.get('LANGUAGE') }}& COUNTRY={{ app.request.query.get('COUNTRY') }}& DB_SERVER={{ app.request.query.get('DB_SERVER') }}& DB_USER={{ app.request.query.get('DB_USER') }}& DB_PASSWD={{ app.request.query.get('DB_PASSWD') }}& DB_EMPTY_PASSWD={{ app.request.query.get('DB_EMPTY_PASSWD') }}& folder={{ app.request.query.get('folder') }}& file={{ app.request.query.get('file') }}& testType={{ app.request.query.get('testType') }}");
+                    ;
+                    break;
+                case "high" :
+                    $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& DIR={{ app.request.query.get('DIR') }} & testType={{ app.request.query.get('testType') }}");
+                    ;
+                    break;
+                case "highSpec" :
+                    $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& DIR={{ app.request.query.get('DIR') }}& folder={{ app.request.query.get('folder') }}& file={{ app.request.query.get('file') }} & HEADLESS={{ app.request.query.get('HEADLESS') }}& testType={{ app.request.query.get('testType') }} ");
+                    ;
+                    break;
+                case "full" :
+                    $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& MODULE={{ app.request.query.get('MODULE') }}& DIR={{ app.request.query.get('DIR') }} & testType={{ app.request.query.get('testType') }} ");
+                    ;
+                    break;
+                case "fullSpec" :
+                    $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?URL={{ app.request.query.get('URL') }}& MODULE={{ app.request.query.get('MODULE') }}& DIR={{ app.request.query.get('DIR') }}& HEADLESS={{ app.request.query.get('HEADLESS') }}& folder={{ app.request.query.get('folder') }}& file={{ app.request.query.get('file') }} & testType={{ app.request.query.get('testType') }} ");
+                    ;
+                    break;
+                case "install" :
+                    $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?HEADLESS={{ app.request.query.get('HEADLESS') }}& DIR={{ app.request.query.get('DIR') }}& URLLASTSTABLEVERSION={{ app.request.query.get('URLLASTSTABLEVERSION') }}& RCTARGET={{ app.request.query.get('RCTARGET') }}& RCLINK={{ app.request.query.get('RCLINK') }}& URL={{ app.request.query.get('URL') }}& LANGUAGE={{ app.request.query.get('LANGUAGE') }}& COUNTRY={{ app.request.query.get('COUNTRY') }}& DB_SERVER={{ app.request.query.get('DB_SERVER') }}& DB_USER={{ app.request.query.get('DB_USER') }}& DB_PASSWD={{ app.request.query.get('DB_PASSWD') }}& FILENAME={{ app.request.query.get('FILENAME') }}& DB_EMPTY_PASSWD={{ app.request.query.get('DB_EMPTY_PASSWD') }}& testType={{ app.request.query.get('testType') }} ");
+                    ;
+                    break;
+                case "installSpec" :
+                    $('#frame').attr("src", "{{ path('prestaShop_test_launchTest') }}?HEADLESS={{ app.request.query.get('HEADLESS') }}& DIR={{ app.request.query.get('DIR') }}& URLLASTSTABLEVERSION={{ app.request.query.get('URLLASTSTABLEVERSION') }}& RCTARGET={{ app.request.query.get('RCTARGET') }}& RCLINK={{ app.request.query.get('RCLINK') }}& URL={{ app.request.query.get('URL') }}& LANGUAGE={{ app.request.query.get('LANGUAGE') }}& COUNTRY={{ app.request.query.get('COUNTRY') }}& DB_SERVER={{ app.request.query.get('DB_SERVER') }}& DB_USER={{ app.request.query.get('DB_USER') }}& DB_PASSWD={{ app.request.query.get('DB_PASSWD') }}& DB_EMPTY_PASSWD={{ app.request.query.get('DB_EMPTY_PASSWD') }}& FILENAME={{ app.request.query.get('FILENAME') }}& file={{ app.request.query.get('file') }}& folder={{ app.request.query.get('folder') }} & testType={{ app.request.query.get('testType') }}");
+                    ;
+                    break;
 
             }
 
         });
+        $('#frame').load(function () {
+            $.ajax({
+                url: "/getScreenShots",
+                data: {'date': date},
+                success:
+                    function (data) {
+                        if ("" !== data) {
+                            $('#screen').show();
+                            res = data.split("\n");
+                            for (i = 1; i < res.length - 1; i++) {
+                                res[i] = res[i].replace("./", "");
+                                $('#links').append($("<div />", {
+                                        class: 'column1',
 
+
+                                    }).append($("<div />", {
+                                        class: 'gallery',
+
+                                    }).append($("<a />", {
+                                        href: 'assets/screenshots/' + res[i],
+                                        title: res[i]
+
+                                    }).append($("<img />", {
+                                        src: 'assets/screenshots/' + res[i],
+                                        alt: res[i],
+
+                                    })))
+                                    )
+                                );
+                            }
+
+                        }
+
+                    },
+                complete: function () {
+                    $('#loadingScreenShots').hide();
+                }
+            });
+            $('#report').show();
+
+            $('#divReports').show();
+        });
         $('#stop').on('click', function () {
             $.confirm({
                 title: 'This Might Take A While...',
@@ -65,13 +186,24 @@
             $('#frame').attr("src", "");
             $.ajax({
                 url: "/kill",
+                //data: {'testType': testType},
                 success:
                     function (data) {
 
                         window.location.href = "/";
+                        //console.log(data);
                     },
             });
         });
+
+        document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
     </script>
 
 {% endblock %}

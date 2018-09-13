@@ -17,11 +17,6 @@
                    href="#list-high" role="tab" aria-controls="high">High Test</a>
                 <a class="list-group-item list-group-item-action" id="list-highSpec-list" data-toggle="list"
                    href="#list-highSpec" role="tab" aria-controls="highSpec">Specific High Test</a>
-                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
-                   href="#list-messages" role="tab" aria-controls="messages">Test Results & Reports</a>
-                <a class="list-group-item list-group-item-action" id="list-screenShots-list" data-toggle="list"
-                   href="#list-screenShots" role="tab"
-                   aria-controls="screenShots">ScreenShots</a>
             </div>
         </div>
         <div class="col-8">
@@ -154,60 +149,6 @@
                         Command
                     </button>
 
-                </div>
-                <div class="tab-pane fade" id="list-messages" role="tabpanel"
-                     aria-labelledby="list-messages-list">{% set type="mocha" %}
-                    {{ TestResults.getReport(type) }}
-
-
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs nav-justified nav-tabs-info">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#html">Html Version</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#json">Json Version</a>
-                        </li>
-
-                    </ul>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane fade active show" id="html">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item"
-                                        src="../assets/mochawesome-report/mochawesome.html"></iframe>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="json">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item"
-                                        src="../assets/mochawesome-report/mochawesome.json"></iframe>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="list-screenShots" role="tabpanel"
-                     aria-labelledby="list-screenShots-list">
-
-
-                    <button type="button" id="screen" class="btn btn-outline-success btn-block">
-                        <i class="fa fa-image"></i>
-                        <span>Load ScreenShots</span>
-                    </button>
-                    <div id="load" style="display: none">
-                        <img src="../assets/imgs/loader.gif" id="loading"
-                             style=" display: block; margin-left: auto; margin-right: auto;">
-                    </div>
-                    <div class="row1">
-                        <div id="links">
-
-
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>

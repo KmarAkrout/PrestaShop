@@ -28,3 +28,6 @@ prestaShop_test_get_files:
 prestaShop_test_get_screenShots:
     path:    /getScreenShots
     defaults: { _controller: PrestaShopTestBundle:Test:getScreenShot }
+prestaShop_test_get_reports:
+    path:    /getReports
+    defaults: { _controller: PrestaShopTestBundle:Test:getReports }

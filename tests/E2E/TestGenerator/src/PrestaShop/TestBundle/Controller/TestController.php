@@ -105,12 +105,18 @@ class TestController extends Controller
         //return new Response($cmd);
     }
 
-    public function killAction()
+    public function killAction(Request $req)
     {
+        //$testType = $req->get('testType');
         $myfile = fopen("../../TestGenerator/web/proc_stat.txt", "r") or die("Unable to open file!");
         $pid = trim(fgets($myfile));
-        posix_kill($pid, SIGKILL);
-        posix_kill(intval($pid) + 1, SIGKILL);
+        //posix_kill($pid, SIGKILL);
+        posix_kill(intval($pid) + 2, SIGKILL);
+        /*switch ($testType) {
+            case "regular" ||"high" || "install" || "full":posix_kill(intval($pid) + 1, SIGKILL);break;
+            default : posix_kill(intval($pid) + 2, SIGKILL);
+
+        }*/
         shell_exec('pkill 2.40-x64-chrom');
         fclose($myfile);
         return new Response(" ");
@@ -123,8 +129,15 @@ class TestController extends Controller
         return new Response ($this->get("prestaShop_test.ManageFiles")->getFiles($path));
     }
 
-    public function getScreenShotAction()
+    public function getScreenShotAction(Request $request)
     {
-        return new Response ($this->get("prestaShop_test.TestResults")->getReport("screenshot"));
+        return new Response ($this->get("prestaShop_test.TestResults")->getReport("screenshot", $request->get('date')));
+
+    }
+
+    public function getReportsAction()
+    {
+        return new Response ($this->get("prestaShop_test.TestResults")->getReport("mocha",""));
+
     }
 }

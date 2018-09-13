@@ -1,11 +1,12 @@
 <?php
 
 namespace PrestaShop\TestBundle\ExecCommand;
-
+use SensioLabs\AnsiConverter\AnsiToHtmlConverter;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use Symfony\Component\HttpFoundation\Response;
+
 
 class CommandExec
 {
@@ -14,9 +15,7 @@ class CommandExec
     public function ExecComm($cmd, $path)
     {
         chdir($path);
-
-
-        set_time_limit(1800);
+        set_time_limit(4444);
         ob_implicit_flush(true);
         $desc = array(
             0 => array('pipe', 'r'), // 0 is STDIN for process
@@ -25,10 +24,10 @@ class CommandExec
         );
 
 
-        $cmd1 = "ping -c 10 www.google.fr";
+        //$cmd1 = "ping -c 2 www.google.fr";
 
 
-        $process = proc_open($cmd1, $desc, $pipes);
+        $process = proc_open($cmd.' --color always', $desc, $pipes);
         $s = proc_get_status($process);
 
         $myfile = fopen("TestGenerator/web/proc_stat.txt", "w") or die("Unable to open file!");
@@ -36,7 +35,7 @@ class CommandExec
         fwrite($myfile, $s['pid']);
 
         fclose($myfile);
-
+        $converter = new AnsiToHtmlConverter();
          if (is_resource($process))
          {
 
@@ -45,7 +44,8 @@ class CommandExec
                  $return_message = fgets($pipes[1], 1024);
                  if (strlen($return_message) == 0) break;
 
-                 echo "<h4 style='color: #FFFFFF ; font-family: Ubuntu Mono'>".$return_message."</h4>";
+
+                 print "<h4 style='font-family: Ubuntu Mono'>".$converter->convert($return_message)."</h4>";
                  ob_flush();
                  flush();
              }

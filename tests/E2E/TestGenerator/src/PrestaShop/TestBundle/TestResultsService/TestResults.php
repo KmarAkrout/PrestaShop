@@ -13,13 +13,15 @@ use Symfony\Component\Finder\Finder;
 class TestResults
 {
 
-    function getReport($type)
+    function getReport($type, $date)
     {
 
-        if ("mocha" == $type) {
-            chdir("../../..");
+        if ("mocha" === $type) {
+            chdir("../../../E2E");
             shell_exec('rm -rf TestGenerator/web/assets/mochawesome-report');
-            shell_exec("cp -a mochawesome-report TestGenerator/web/assets/mochawesome-report");
+            shell_exec('npm run concat-files-report');
+            shell_exec("cp -a email_sender/test_report.html TestGenerator/web/assets/mochawesome-report");
+
         } else {
             chdir('../../../E2E');
 
@@ -29,7 +31,7 @@ class TestResults
             return $out;*/
             shell_exec("cp -a screenshots ../TestGenerator/web/assets/screenshots");
             chdir('../TestGenerator/web/assets/screenshots');
-            $output = shell_exec('ls -t | head -n10');
+            $output = shell_exec('find -newermt ' . '"' . $date . '"');
             //$images = explode("\n", $output);
             return $output;
         }
