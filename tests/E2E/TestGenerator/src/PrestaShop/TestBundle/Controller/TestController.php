@@ -105,22 +105,25 @@ class TestController extends Controller
         //return new Response($cmd);
     }
 
-    public function killAction(Request $req)
+    public function killAction()
     {
-        //$testType = $req->get('testType');
+
         $myfile = fopen("../../TestGenerator/web/proc_stat.txt", "r") or die("Unable to open file!");
         $pid = trim(fgets($myfile));
         //posix_kill($pid, SIGKILL);
-        posix_kill(intval($pid) + 2, SIGKILL);
-        /*switch ($testType) {
-            case "regular" ||"high" || "install" || "full":posix_kill(intval($pid) + 1, SIGKILL);break;
-            default : posix_kill(intval($pid) + 2, SIGKILL);
-
-        }*/
-        shell_exec('pkill 2.40-x64-chrom');
+        $pluso = intval($pid) + 1;
+        $plust = intval($pid) + 2;
+        $out1 = shell_exec("ps " . $pluso);
+        $out2 = shell_exec("ps " . $plust);
+        if (strpos($out1, "\n") !== false) {
+            posix_kill(intval($pid) + 1, SIGKILL);
+        }
+        if (strpos($out2, "\n") !== false) {
+            posix_kill(intval($pid) + 2, SIGKILL);
+        }
         fclose($myfile);
-        return new Response(" ");
-
+        shell_exec('pkill 2.40-x64-chrom');
+        return new Response("");
     }
 
     public function getFilesAction(Request $request)
@@ -137,7 +140,7 @@ class TestController extends Controller
 
     public function getReportsAction()
     {
-        return new Response ($this->get("prestaShop_test.TestResults")->getReport("mocha",""));
+        return new Response ($this->get("prestaShop_test.TestResults")->getReport("mocha", ""));
 
     }
 }
