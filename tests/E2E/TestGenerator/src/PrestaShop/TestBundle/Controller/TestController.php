@@ -102,15 +102,23 @@ class TestController extends Controller
 
         }
         return new Response($this->get("prestaShop_test.execcommand")->ExecComm($cmd, '../..'));
-        //return new Response($cmd);
-    }
 
+    }
+/* To Do
+ * Here is the method that is used to stop the running test
+ * when i start the test in the execCommand service i save the pid of the launched process to a file
+ * i noticed that when a test is launched there is 2 processes running, the one i saved its PID and another one.
+ * generally the other one is my saved Pid+1
+ * sometimes it's my saved pid +2
+ * i'm treating the 2 cases when it's +1 and when it's +2 (it's absurd)
+ * for killing the chromeDriver process (which keeps opening chrome windows even after the test is killed) i'm using the process's name "pkill 2.40-x64-chrom"
+ * when the version 2.40 is upgraded the name may change and this will cause problems.
+ * PS:i'm using the name because selenium is running chromeDriver on a different port each time, so basically i have nothing to use to kill it but its name*/
     public function killAction()
     {
 
         $myfile = fopen("../../TestGenerator/web/proc_stat.txt", "r") or die("Unable to open file!");
         $pid = trim(fgets($myfile));
-        //posix_kill($pid, SIGKILL);
         $pluso = intval($pid) + 1;
         $plust = intval($pid) + 2;
         $out1 = shell_exec("ps " . $pluso);

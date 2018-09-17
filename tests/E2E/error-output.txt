@@ -1,0 +1,855 @@
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Killed
+Killed
+Killed
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+
+npm ERR! Linux 4.15.0-34-generic
+npm ERR! argv "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop"
+npm ERR! node v8.10.0
+npm ERR! npm  v3.5.2
+npm ERR! code ELIFECYCLE
+npm ERR! END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop"`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop"'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the END2END package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop"
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs END2END
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls END2END
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+
+npm ERR! Linux 4.15.0-34-generic
+npm ERR! argv "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop"
+npm ERR! node v8.10.0
+npm ERR! npm  v3.5.2
+npm ERR! code ELIFECYCLE
+npm ERR! END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop"`
+npm ERR! Exit status 2
+npm ERR! 
+npm ERR! Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop"'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the END2END package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop"
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs END2END
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls END2END
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+Terminated
+npm ERR! Test failed.  See above for more details.
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0mTerminated
+Terminated
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 8
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 15
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0mTerminated
+Terminated
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0mping : option invalide -- '-'
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 17
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 6
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 8
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0mTerminated
+Terminated
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0mKilled
+Killed
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--HEADLESS=true" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--HEADLESS=true" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 37
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--HEADLESS=true" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--HEADLESS=true" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0mTerminated
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 6
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 33
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m(node:10249) UnhandledPromiseRejectionWarning: Error: stale element reference: element is not attached to the page document
+    at new RuntimeError (/home/kmar/www/PrestaShop/tests/E2E/node_modules/webdriverio/build/lib/utils/ErrorHandler.js:143:12)
+    at Request._callback (/home/kmar/www/PrestaShop/tests/E2E/node_modules/webdriverio/build/lib/utils/RequestHandler.js:316:39)
+    at Request.self.callback (/home/kmar/www/PrestaShop/tests/E2E/node_modules/webdriverio/node_modules/request/request.js:185:22)
+    at emitTwo (events.js:126:13)
+    at Request.emit (events.js:214:7)
+    at Request.<anonymous> (/home/kmar/www/PrestaShop/tests/E2E/node_modules/webdriverio/node_modules/request/request.js:1157:10)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at IncomingMessage.<anonymous> (/home/kmar/www/PrestaShop/tests/E2E/node_modules/webdriverio/node_modules/request/request.js:1079:12)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+(node:10249) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:10249) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 8
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--DIR=/home/kmar/Téléchargements" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always" "--tabulate"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always" "--tabulate"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 8
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always" "--tabulate"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always" "--tabulate"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always" "--tabulate"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always" "--tabulate"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 8
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always" "--tabulate"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always" "--tabulate"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0mTerminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Terminated
+Killed
+Killed
+Killed
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0mTerminated
+Killed
+Terminated
+Killed
+Killed
+Killed
+Killed
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0mTerminated
+Killed
+Killed
+Killed
+Killed
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Linux 4.15.0-34-generic
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "/usr/bin/node" "/usr/bin/npm" "run" "specific-test" "--" "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v8.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v3.5.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m END2END@1.0.0 specific-test: `node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the END2END@1.0.0 specific-test script 'node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Make sure you have the latest version of node.js and npm installed.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m If you do, this is most likely a problem with the END2END package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/mocha/bin/mocha test/campaigns/$path "--URL=localhost/www/PrestaShop" "--color" "always"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get information on how to open an issue for this project with:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm bugs END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Or if that isn't available, you can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls END2END
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /home/kmar/www/PrestaShop/tests/E2E/npm-debug.log
+[0mKilled
+Terminated
+Terminated
+Terminated
+Terminated
+Killed
+Terminated
+Terminated
+Terminated
+Terminated
+Killed
+Killed
+Killed
+Killed
